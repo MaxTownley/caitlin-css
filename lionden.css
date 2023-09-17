@@ -1,6 +1,15 @@
+/*
+* Hazel's Lionden Page
+*/
+
 body 
 {
-	background: url("https://cutewallpaper.org/21/pixel-wallpaper-gif/Pixel-art-wallpaper-gif-13-GIF-Images-Download.gif") fixed;background-repeat: no-repeat;background-size: cover;color: #000;
+	background: rgba(153,162,133) fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #000;
+	border: none;
+	
 }
 
 .welcomeback, .white, .bottomlinks li a:hover, .bottomlinks li a 
@@ -14,15 +23,42 @@ h1, h3 , .sidebar h3
 	font-family: 'Courier New', monospace;
 	text-align: left;
 	color: #000000;
-	border-bottom: 1px solid #000;
+	border-bottom: none;
+	border-radius: 5px;
 }
+
+/* Images */
+.lionImage.featured-lion
+{
+    content: url("https://i.pinimg.com/564x/fe/31/a1/fe31a1c67cac4cfab85f761b4145a9aa.jpg")
+}
+
+img[src*="//static.lioden.com/images/layout/cavedefault.jpg"] 
+{
+    content: url("https://i.pinimg.com/564x/fe/31/a1/fe31a1c67cac4cfab85f761b4145a9aa.jpg");
+    height: 126px
+}
+
+/* Comment Box */
+
+#commentBox 
+{
+  border: none;
+  background-color: rgb(182, 173, 144, 255);
+  border-radius: 10px;
+  padding: 0px;
+  margin-bottom: 5px;
+  height: 300px;
+  overflow: auto;
+}
+
 
 /* Buttons */
 input[type="button"], input[type="submit"], input[type="submit"]:hover 
 {
 	background: rgba(203,226,181,0.21);
-	color: #000000;
-	border: 1px solid #000;
+	color: rgb(194,197,170);
+	border: none;
 	text-shadow: none;
     font-family: 'Courier New', monospace;
 	font-weight: bold;
@@ -30,29 +66,28 @@ input[type="button"], input[type="submit"], input[type="submit"]:hover
 	border-radius: 5px;
 }
  
- 
-/* Links */
- 
+/* Link s*/
 .table a:link, .table a:active, .table a:visited, .right a:link, .right a:active, .right a:visited, .bottom a:link, .bottom a:active, .bottom a:visited, .topbar a:link, .topbar a:visited, .topbar a:active, a:link, a:visited, a:active 
 {
     font-family: 'Courier New', monospace;
-	color: #000000;
+	color: rgb(101, 109, 74);
 }
  
 .table .top a:link, .table .top a:active, .table .top a:visited, .table th a:link, .table th a:active, .table th a:visited 
 {
     font-family: 'Courier New', monospace;
-	border-bottom: 1px solid #000000;
-	color: #000000;
+	border-bottom: none;
+	border-radius: 5px;
+	color: rgb(194,197,170);
 }
  
 /* Topbar */
- 
 .topbar 
 {
     font-family: 'Courier New', monospace;
-	background: rgba(85, 106, 13, 0.70);
-	border: 1px solid #000000;
+	background: rgb(163,175,151);
+	border: none;
+	border-radius: 5px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
@@ -61,7 +96,8 @@ input[type="button"], input[type="submit"], input[type="submit"]:hover
 {
     font-family: 'Courier New', monospace;
 	background: rgba(203,226,181, 0.21);
-	border: 1px solid #000000;
+	border: none;
+	border-radius: 5px;
 }
  
 /* Navigational Bar */ 
@@ -69,7 +105,8 @@ input[type="button"], input[type="submit"], input[type="submit"]:hover
 {
     font-family: 'Courier New', monospace;
 	background: rgba(203, 226, 181, 0.21);
-	border: 1px solid #000000;
+	border: none;
+	border-radius: 5px;
 	box-shadow: none;
 }
  
@@ -77,42 +114,44 @@ input[type="button"], input[type="submit"], input[type="submit"]:hover
 {
     font-family: 'Courier New', monospace;
 	background: rgba(203, 226, 181, 0.21);
-	border-bottom: 1px solid #000;
-	color: #000000;
+	border-bottom: none;
+	border-radius: 5px;
+	color: rgb(101, 109, 74);
 }
  
 .navbar-default .navbar-nav > li > a 
 {
     font-family: 'Courier New', monospace;
-	color: #000000;
+	color: rgb(101, 109, 74);
 }
  
 .navbar-default .navbar-nav li a:hover 
 {
     font-family: 'Courier New', monospace;
-	color: #000000;
+	color: rgb(101, 109, 74);
 	background: #8fa273;
-	border-left: 1px solid #000;
-	border-right: 1px solid #000;
-} 
- 
- 
- 
+	border-left: none;
+	border-right: none;
+	border-radius: 5px;
+}
+
 /* Sidebar */
 .sidebar
 {
     font-family: 'Courier New', monospace;
-	background: rgba(203, 226 ,18, 0.1);
-	border: 0px solid #000;
-	border-bottom: 1px solid #000;
-	border-left: 1px solid #000;
-	color: #000000;
+	background: rgb(163,175,151);
+	border: none;
+	border-bottom: none;
+	border-left: none;
+	border-radius: 5px;
+	color: rgb(101, 109, 74);
 }
  
 .col-md-3 .panel
 {
 	background: rgba(203, 226, 181, 0.21);
-	border: 1px solid #000;
+	border:none;
+	border-radius: 5px;
 	box-shadow: none;    
 }
  
@@ -124,7 +163,7 @@ input[type="button"], input[type="submit"], input[type="submit"]:hover
 .progress 
 {
 	background: #f7f7f7;
-	border: 1px solid #000;
+	border: none;
 }
  
  
@@ -133,113 +172,116 @@ input[type="button"], input[type="submit"], input[type="submit"]:hover
 {
 	background: rgba(203, 226, 181, 0.21);
 	font-size: 11px;
-	color: #000000;
+	color: rgb(101, 109, 74);
 }
 
 .chatContainer 
 {
-	border: 1px solid #000;
+	border: none;
+	border-radius: 5px;
 }
  
 .userstolen 
 {
-background: none;
+	background: none;
 }
 
 .alert-danger 
 {
-	color: #000000;
+	color: rgb(101, 109, 74);
 	background: rgba(85, 106, 13, 0.21);
-	border: 1px solid #000;
+	border: none;
+	border-radius: 5px;
 }
 
 .alert-success 
 {
-	color: #000000;
+	color: rgb(101, 109, 74);
 	background: rgba(203, 226, 181, 0.21);
-	border: 1px solid #000;
+	border: none;
 }
 
-.breadcrumb 
-{
-	background:  rgba(203, 226, 181, 0.21);
-	font-size: 13px;
-	border: 1px solid #000;
+.breadcrumb {
+  background: rgb(182, 173, 144, 255);
+  font-size: 13px;
+  border: none;
+  border-radius: 5px;
 }
- 
+
 .breadcrumb>.active 
 {
-	color: #000000;
+	color: rgb(101, 109, 74);
 }
  
 h1 small, h2, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 
 {
 	font-family: 'Courier New', monospace;
-	color: #000000;
+	color: rgb(101, 109, 74);
 }
  
 .col-md-9 
 {
 	background: none;
-	border: 0px solid #000;
+	border: none;
+	border-radius: 5px;
 }
  
 /* Tables */
- 
 #lion_image 
 {
-border-radius: 25px;
-overflow: hidden;
-border: 1px solid #000;
+	border-radius: 25px;
+	overflow: hidden;
+	border: none;
+	border-radius: 5px;
 }
  
 .table, .item 
 {
-	border: 1px solid #000;
+	border: none;
 	background: rgba(85, 106, 13, 0.21);
 	border-collapse: separate;
+	border-radius: 5px;
 }
 
 .table .right, .table .right_odd 
 {
-	background: none;
-	border: 0px solid #000;
+	background: rgb(182, 173, 144, 255);
+	border: none;
+	border-radius: 5px;
 }
 
 div .feature, .cave-grid, div .left, .mound-grid,  .table .bottom,  .table .top, .table th, .item-header, .item-footer 
 {
-	border: 0px solid #000;
-	background: rgba(203, 226, 181, 0.21);
-	color: #000000;
+	border: none;
+	border-radius: 5px;
+	background: rgb(101, 109, 74);
+    color: rgb(194,197,170);
 }
 
 .cave-grid, div .left, .mound-grid 
 {
-	border: 1px solid #000;
+	border: none;
 	background: #8fa273;
-	color: #000000;
-}
-
-.lionImage.featured-lion
-{
-    content: url("https://i.pinimg.com/564x/fe/31/a1/fe31a1c67cac4cfab85f761b4145a9aa.jpg")
-}
-
-img[src*="//static.lioden.com/images/layout/cavedefault.jpg"] {
-    content: url("https://i.pinimg.com/564x/fe/31/a1/fe31a1c67cac4cfab85f761b4145a9aa.jpg");
-    height: 126px
+	color: rgb(101, 109, 74);
 }
 
 .table .left 
 {
-	border: 1px solid #000;
+	border: none;
+	border-radius: 5px;
 	background: rgba(203, 226, 181, 0.21);
-	color: #000000;
+	color: rgb(101, 109, 74);
 }
 
 .inner-table .right 
 {
 	background: rgba(203, 226, 181, 0.21);
-	border: 1px solid #000;
+	border: none;
+	border-radius: 5px;
 	border-left: none;
 }
+
+.table .bottom a:link, .table .bottom a:visited, .table .bottom a:active {
+	color: rgb(194,197,170);
+	text-decoration: underline;
+  }
