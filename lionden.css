@@ -1,7 +1,6 @@
 /*
 * Hazel's Lionden Page
 */
-
 body 
 {
 	background: rgba(153,162,133) fixed;
@@ -33,14 +32,7 @@ h1, h3 , .sidebar h3
     content: url("https://i.pinimg.com/564x/fe/31/a1/fe31a1c67cac4cfab85f761b4145a9aa.jpg")
 }
 
-img[src*="//static.lioden.com/images/layout/cavedefault.jpg"] 
-{
-    content: url("https://i.pinimg.com/564x/fe/31/a1/fe31a1c67cac4cfab85f761b4145a9aa.jpg");
-    height: 126px
-}
-
 /* Comment Box */
-
 #commentBox 
 {
   border: none;
@@ -165,22 +157,7 @@ input[type="button"], input[type="submit"], input[type="submit"]:hover
 	background: #f7f7f7;
 	border: none;
 }
- 
- 
-/* Chat */
-.chat_light, .chat_dark 
-{
-	background: rgba(203, 226, 181, 0.21);
-	font-size: 11px;
-	color: rgb(101, 109, 74);
-}
 
-.chatContainer 
-{
-	border: none;
-	border-radius: 5px;
-}
- 
 .userstolen 
 {
 	background: none;
@@ -281,7 +258,75 @@ div .feature, .cave-grid, div .left, .mound-grid,  .table .bottom,  .table .top,
 	border-left: none;
 }
 
-.table .bottom a:link, .table .bottom a:visited, .table .bottom a:active {
+.table .bottom a:link, .table .bottom a:visited, .table .bottom a:active 
+{
 	color: rgb(194,197,170);
 	text-decoration: underline;
-  }
+}
+
+.s-chat-message:nth-child(even) 
+{
+	background: #fff7ed !important;
+	color: #684c31 !important;
+}
+
+.s-chat-message:nth-child(odd) 
+{
+	background: #ffedd5 !important;
+	color: #684c31 !important;
+}
+
+.s-chat-message__pinned 
+{
+	background: #cbc487 !important;
+	color: #684c31 !important;
+        border-bottom: none !important;
+}
+
+.s-chat-message_timestamp 
+{
+	color: #684c31 !important;
+}
+
+button#label_currentChannel 
+{
+	background: #f7f0e5 !important;
+	color: #684c31 !important;
+}
+
+/* Caves */ 
+div.cave-grid>img {
+	content: url('https://i.imgur.com/JCHyQu2.png')!important;
+	width: 100%;
+	height: auto;
+}
+
+a[href$="373950"]>div.cave-grid>img {
+	content: url('https://i.imgur.com/VFYq2X6.png')!important;
+	width: 100%;
+	height: auto;
+}
+
+a[href$="372345"]>div.cave-grid>img {
+	content: url('https://i.imgur.com/CfZZNS4.png')!important;
+	width: 100%;
+	height: auto;
+}
+
+a[href$="371981"]>div.cave-grid>img {
+	content: url('https://i.imgur.com/HQ8VKAg.png')!important;
+	width: 100%;
+	height: auto;
+}
+
+a[href$="371981"]>div.cave-grid>img {
+	content: url('https://i.imgur.com/HQ8VKAg.png')!important;
+	width: 100%;
+	height: auto;
+}
+
+a[href$="437787"]>div.cave-grid>img {
+	content: url('https://i.imgur.com/JCHyQu2.png')!important;
+	width: 100%;
+	height: auto;
+}
